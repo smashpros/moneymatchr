@@ -1,0 +1,21 @@
+[package]
+name = "smashpros-moneymatchr"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "smashpros_moneymatchr"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.19.0"
+anchor-spl = {version = "0.18.2"}
+spl-token = {version = "3.1.1", features = ["no-entrypoint"]}
